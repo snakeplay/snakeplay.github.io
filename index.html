@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Snake Game</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<div>
+		<p class="title">Snake Game</p>
+		<small class="small_title">by Crismari</small><br>
+		<p id="fps">Fps: <span id="f">0</span></p>
+	</div>
+	<canvas id="game" width="608" height="608"></canvas>
+	<div id="settings">
+		<label for="easy"><input type="radio" name="gamemode" id="easy"> Easy mode</label>
+		<label for="medium"><input type="radio" name="gamemode" id="medium"> Medium mode</label>
+		<label for="hard"><input type="radio" name="gamemode" id="hard"> Hard mode</label>
+	</div>
+	<div id="gameover">
+		<h1>GAMEOVER</h1>
+		<p id="score" align="center"></p>
+		<button id="play" onclick="gameRestart()">Play</button>
+	</div>
+	<div class="decor" id="decor1"><span>PATRICIA</span></div>
+	<div class="decor" id="decor2"><span>PATRICIA</span></div>
+	<script src="script/script.js"></script>
+</body>
+</html>
