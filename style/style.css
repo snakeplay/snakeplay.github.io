@@ -1,0 +1,173 @@
+* {
+	font-family: 'Arial';
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	background: url("https://images.wallpaperscraft.com/image/bird_silhouette_vector_134154_1920x1080.jpg");
+}
+body > div {
+	margin-bottom: 10px;
+}
+.title {
+	font-size: 2rem;
+	margin: 0;
+	color: #578a34;
+	text-shadow: 0 0 2px #fff;
+}
+.small_title {
+	color: #fff;
+}
+#fps {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 0;
+}
+#game {
+	display: block;
+}
+#gameover {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0, 0.75);
+	color: #fff;
+	font-size: 2rem;
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+#gameover h1 {color: red;text-shadow: 0 0 6px #000;}
+#gameover button {
+	width: 200px;
+	height: 60px;
+	color: #fff;
+	background-color: #4caf50;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 2rem;
+	-webkit-transition: width 300ms, box-shadow 300ms, background-color 300ms;
+	-o-transition: width 300ms, box-shadow 300ms, background-color 300ms;
+	transition: width 300ms, box-shadow 300ms, background-color 300ms;
+}
+#gameover button:hover {
+	width: 250px;
+	background-color: green;
+	-webkit-box-shadow: 0 0 6px white;
+	box-shadow: 0 0 6px white;
+	border-radius: 6px;
+}
+#settings {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	width: 608px;
+	margin-top: 20px;
+}
+#settings label {
+	height: 30px;
+	min-width: 30%;
+	background-color: rgba(255,255,255, 0.3);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	font-weight: bold;
+	text-shadow: 0 0 4px #000;
+}
+#settings label, #settings label input {cursor: pointer;}
+#settings label:first-child {color: green;}
+#settings label:nth-child(2) {color: yellow;}
+#settings label:last-child {color: orange;}
+#help {
+	color: #666;
+	font-size: 1.5rem;
+	text-shadow: 0 0 2px #000;
+	-webkit-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+.decor {
+	position: fixed;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	font-size: 3em;
+	color: #fff;
+	cursor: default;
+	top: 40%;
+}
+#decor1 {
+	left: 8%;
+}
+#decor2 {
+	right: 8%;
+}
+.decor span {
+	color: #f35626;
+  background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 15s infinite linear;
+}
+
+@media only screen and (max-width: 1300px) {
+  .decor {display: none;}
+}
+/*-----------------------------------*\
+  $ANIMATIONS
+\*-----------------------------------*/
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
