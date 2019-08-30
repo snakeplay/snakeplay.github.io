@@ -20,7 +20,9 @@ html, body {
 	flex-direction: column;
 	-ms-align-items: center;
 	align-items: center;
-	background: url("https://images.wallpaperscraft.com/image/bird_silhouette_vector_134154_1920x1080.jpg");
+	background: url("https://images.wallpaperscraft.com/image/bird_silhouette_vector_134154_1920x1080.jpg") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 #all > div {
 	margin-bottom: 10px;
