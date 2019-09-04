@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta id="phone" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Snake Game</title>
 	<link rel="stylesheet" href="style/style.css">
+	<script>
+	var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+		if (x < 400) {
+		    document.getElementById('phone').removeChild;
+		}
+	</script>
 </head>
 <body>
 	<section id="all">
